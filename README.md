@@ -1,7 +1,12 @@
+![work status](https://img.shields.io/badge/work-on%20progress-red.svg)
+![Ngor Seck](https://img.shields.io/badge/Ngor%20Seck-Java-green)
+![Java](https://img.shields.io/badge/Ngor%20Seck-Spring-yellowgreen)
+![Jetty](https://img.shields.io/badge/Ngor%20Seck-TomcatWebServer-blue)
+# Documentation
 # serverless-aws serverless API
 The serverless-aws project, created with [`aws-serverless-java-container`](https://github.com/awslabs/aws-serverless-java-container).
 
-The starter project defines a simple `/ping` resource that can accept `GET` requests with its tests.
+The starter project defines a simple `/aws/ping` resource that can accept `GET` requests with its tests.
 
 The project folder also includes a `template.yml` file. You can use this [SAM](https://github.com/awslabs/serverless-application-model) file to deploy the project to AWS Lambda and Amazon API Gateway or test in local with the [SAM CLI](https://github.com/awslabs/aws-sam-cli). 
 
@@ -46,7 +51,7 @@ Mounting com.amazonaws.serverless.archetypes.StreamLambdaHandler::handleRequest 
 Using a new shell, you can send a test ping request to your API:
 
 ```bash
-$ curl -s http://127.0.0.1:3000/ping | python -m json.tool
+$ curl -s http://127.0.0.1:8080/aws/ping | python -m json.tool
 
 {
     "pong": "Hello, World!"
